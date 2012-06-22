@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Raphaël · Tiger</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+        <script src="raphael.js"></script>
+        <script src="svg.js"></script>
+        <script>
+            window.onload = function () {
+                var paper = Raphael(10, 50, 1024, 786);
+                wind = paper.path(wind).attr({fill: "#000", stroke: "none"});
+                house = paper.path(house).attr({fill: "#000", stroke: "none"});
+                wind.scale(0.1,0.1).translate(-3000,-4000);
+                house.scale(3,3).translate(100,100);
+            };
+        </script>
+    </head>
+    <body>
+        <div id="holder"></div>
+    </body>
+</html>
